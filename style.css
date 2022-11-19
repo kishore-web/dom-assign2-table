@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+form {
+  margin: 15px 10%;
+  /* width: 80%; */
+}
+input {
+  border: 8px solid tomato ;
+  padding: 2px;
+  border-radius: 3px;
+  min-width: 20%;
+}
+#row {
+  background-color: tomato;
+  color: white;
+  padding: 9px;
+  border: none;
+  border-radius: 3px;
+
+}
+tr {
+  border: 8px solid tomato ; 
+  margin: 15px;
+  width: 80%;
+}
+th {
+  min-width: 15%;
+  margin: 15px;
+  border: 8px solid tomato ; 
+
+}

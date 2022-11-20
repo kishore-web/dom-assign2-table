@@ -25,11 +25,11 @@ function submitCustDetails() {
     const rowMobile = document.createElement("td")
     const rowAction = document.createElement("td")
     const buttonDelete = document.createElement("button")
-    rowThree.setAttribute("class", "generatetr")
     buttonDelete.setAttribute("class", "del");
-
-    buttonDelete.style = "width:90px; height:40px; border-radius:4px;border: 1px solid black;"
+    
     buttonDelete.innerText = "Delete"
+    buttonDelete.style = "width:90px; height:40px; border-radius:4px;border: 1px solid black;"
+    
     rowAction.appendChild(buttonDelete);
 
       custTable.appendChild(rowThree);

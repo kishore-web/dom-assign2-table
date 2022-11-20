@@ -1,35 +1,47 @@
 * {
-  padding: 0;
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+td {
+  width: 24vw;
+  height: 45px;
+  background-color: tomato;
+  text-align: center;
+  border-spacing: 10px;
+  border-radius: 5px;
   
 }
-form {
-  margin: 15px 10%;
-  /* width: 80%; */
+
+#submitbutton{
+ width: 65px;
+ padding: 4px;
+ border: 1px solid black;
 }
-input {
-  border: 8px solid tomato ;
-  padding: 2px;
-  border-radius: 3px;
-  min-width: 20%;
-}
-#row {
-  background-color: tomato;
+
+#bottom-row td {
+  font-weight: bold;
   color: white;
-  padding: 9px;
+}
+.generatetd {
+color: white;
+}
+
+input {
+  width: 90%;
+  height: 80%;
+  padding: 10px;
+  border-radius: 5px;
   border: none;
-  border-radius: 3px;
+}
 
+#warning {
+  margin: 10px auto;
+  text-align: center;
+  color: red;
 }
-tr {
-  border: 8px solid tomato ; 
-  margin: 15px;
-  width: 80%;
-}
-th {
-  min-width: 15%;
-  margin: 15px;
-  border: 8px solid tomato ; 
 
-}
+ 

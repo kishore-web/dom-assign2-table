@@ -5,14 +5,10 @@ const submitbutton = document.getElementById("submitbutton")
 const custTable = document.querySelector("#custTable");
 const warning = document.querySelector("#warning");
 
-//preventing default effect of submit button
-submitbutton.addEventListener("click", (e) => {
+
+function submitCustDetails(e) {
+  //preventing default effect of submit button
   e.preventDefault();
-})
-
-submitbutton.addEventListener("click", submitCustDetails);
-
-function submitCustDetails() {
   if (newName.value == "" || emailId.value == "" || mobile.value == "") {
     warning.innerText = "Please enter complete costumer details"
     setTimeout (() => {
@@ -43,11 +39,12 @@ function submitCustDetails() {
   }
 }
 
-custTable.addEventListener("click", deletingButton)
-
 function deletingButton(e) {
   if(!e.target.classList.contains("del")) {
     return;
   }
 return e.target.parentElement.parentElement.remove();
 }
+
+custTable.addEventListener("click", deletingButton)
+submitbutton.addEventListener("click", submitCustDetails);
